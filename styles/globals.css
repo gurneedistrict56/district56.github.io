@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+  * @license
+  * MyFonts Webfont Build ID 4871048, 2022-05-20T17:13:42-0400
+  * 
+  * The fonts listed in this notice are subject to the End User License
+  * Agreement(s) entered into by the website owner. All other parties are 
+  * explicitly restricted from using the Licensed Webfonts(s).
+  * 
+  * You may obtain a valid license at the URLs below.
+  * 
+  * Webfont: BrandonGrotesqueWeb-Bold by HVD Fonts
+  * URL: https://www.myfonts.com/fonts/hvdfonts/brandon-grotesque/bold/
+  * 
+  * Webfont: BrandonGrotesqueWeb-Black by HVD Fonts
+  * URL: https://www.myfonts.com/fonts/hvdfonts/brandon-grotesque/black/
+  * 
+  * Webfont: BrandonGrotesqueWeb-Regular by HVD Fonts
+  * URL: https://www.myfonts.com/fonts/hvdfonts/brandon-grotesque/regular/
+  * 
+  * 
+  * Webfonts copyright: Copyright (c) 2015 by Hannes von Doehren. All rights reserved.
+  * 
+  * © 2022 MyFonts Inc
+  */
+
+  /* Regular */
+  @font-face {
+    font-family: "BrandonGrotesqueWeb";
+    font-weight: 400;
+    font-style: normal;
+    src: url('/fonts/BrandonGrotesqueWebRegular/font.woff2') format('woff2'), url('/fonts/BrandonGrotesqueWebRegular/font.woff') format('woff');
+  }
+  /* Bold */
+  @font-face {
+    font-family: "BrandonGrotesqueWeb";
+    font-weight: 700;
+    font-style: normal;
+    src: url('/fonts/BrandonGrotesqueWebBold/font.woff2') format('woff2'), url('/fonts/BrandonGrotesqueWebBold/font.woff') format('woff');
+  }
+  /* Black */
+  @font-face {
+    font-family: "BrandonGrotesqueWeb";
+    font-weight: 900;
+    font-style: normal;
+    src: url('/fonts/BrandonGrotesqueWebBlack/font.woff2') format('woff2'), url('/fonts/BrandonGrotesqueWebBlack/font.woff') format('woff');
+  }
+
+  .text-shadow {
+    text-shadow: 1px 1px 12px rgba(0, 0, 0, 50%);
+  }
+
+  body {
+    @apply bg-stone-50;
+  }
+
+  #google_translate {
+    @apply overflow-hidden h-7;
+  }
+
+  #google_translate select {
+    @apply font-sans text-[0.8rem] leading-none mt-0 px-1 h-6 rounded-md;
+    @apply text-white bg-stone-800;
+  }
+}
